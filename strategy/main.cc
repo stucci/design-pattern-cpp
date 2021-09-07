@@ -34,7 +34,6 @@ public:
     static vector<Hand *> hands = {new Hand(0), new Hand(1), new Hand(2)};
     return hands[hand_value];
   }
-  //   int getHandValue() { return hand_value_; }
   bool isStrongerThan(Hand *h) { return fight(h) == 1; }
   bool isWeakerThan(Hand *h) { return fight(h) == -1; }
 };
